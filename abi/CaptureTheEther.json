@@ -1,0 +1,35 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "nickname",
+				"type": "bytes32"
+			}
+		],
+		"name": "setNickname",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "nicknameOf",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
