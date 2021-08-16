@@ -1,0 +1,19 @@
+version: "3.0"
+
+services:
+  cte-commander:
+    container_name: cte-commander
+    build: .
+    image: cte-commander
+    env_file:
+      - .env
+    ports:
+      - "${PORT}:${PORT}"
+    volumes:
+      - .:/usr/src/cte-commander
+    networks:
+      - cte-network
+
+networks:
+  cte-network:
+    driver: bridge
