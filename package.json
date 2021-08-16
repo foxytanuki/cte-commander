@@ -9,7 +9,7 @@
   "scripts": {
     "generate-types": "typechain --target=ethers-v5 'abi/*.json'",
     "postinstall": "yarn generate-types",
-    "start": "ts-node ./src/index.ts",
+    "start": "ts-node",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
