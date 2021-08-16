@@ -7,7 +7,7 @@ const main = async () => {
   const wallet = getWallet();
 
   const callMe = CallMeChallenge__factory.connect(CONTRACT_ADDRESS, wallet);
-  const result = await callMe.callme().catch(handleError);
+  const result = await callMe.isComplete().catch(handleError);
 
   console.log(result);
 };
