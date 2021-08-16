@@ -1,0 +1,25 @@
+{
+  "name": "cte-commander",
+  "version": "0.0.1",
+  "description": "Client(Commander) Application for Capture the Ether(https://capturetheether.com/).",
+  "main": "index.js",
+  "author": "Yuta Tsurusaki <biz@yuta-tsurusaki.com> (https://github.com/yuta-tsurusaki)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "generate-types": "typechain --target=ethers-v5 'abi/*.json'",
+    "postinstall": "yarn generate-types",
+    "start": "ts-node ./src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@typechain/ethers-v5": "^6.0.1",
+    "@types/bn.js": "^5.1.0",
+    "ts-node": "^9.1.1",
+    "typechain": "^4.0.2",
+    "typescript": "4.2.2"
+  },
+  "dependencies": {
+    "ethers": "^5.0.31"
+  }
+}
