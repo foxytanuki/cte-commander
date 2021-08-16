@@ -9,8 +9,9 @@
   "scripts": {
     "generate-types": "typechain --target=ethers-v5 'abi/*.json'",
     "postinstall": "yarn generate-types",
-    "start": "ts-node",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "start": "docker-compose run cte-commander yarn start:ts",
+    "start:ts": "ts-node"
   },
   "devDependencies": {
     "@typechain/ethers-v5": "^6.0.1",
