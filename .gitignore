@@ -119,3 +119,6 @@ dist
 
 # typechain
 types/
+
+# hardhat's artifact cache
+cache
