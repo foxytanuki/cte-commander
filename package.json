@@ -12,8 +12,9 @@
     "generate-types": "typechain --target=ethers-v5 'abi/*.json'",
     "postinstall": "yarn generate-types",
     "typecheck": "tsc --noEmit",
-    "start": "docker-compose run -u root cte-commander yarn ts-node",
-    "hardhat": "docker-compose run -u root cte-commander npx hardhat run"
+    "start": "yarn docker:run yarn ts-node",
+    "start:h": "yarn docker:run yarn hardhat run",
+    "docker:run": "docker-compose run -u root cte-commander"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
@@ -25,6 +26,7 @@
     "@types/node": "^16.6.1",
     "ethers": "^5.0.31",
     "hardhat": "^2.6.0",
+    "prettier": "^2.3.2",
     "ts-node": "^10.2.0",
     "typechain": "^5.1.2",
     "typescript": "4.3.5"

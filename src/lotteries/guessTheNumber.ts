@@ -1,8 +1,8 @@
-import { utils, PayableOverrides } from "ethers";
-import { GuessTheNumberChallenge__factory } from "../../types/ethers-contracts";
-import { handleError, getWallet } from "../utils";
+import { utils, PayableOverrides } from 'ethers';
+import { GuessTheNumberChallenge__factory } from '../../types/ethers-contracts';
+import { handleError, getWallet } from '../utils';
 
-const CONTRACT_ADDRESS = "0xB841e47509C3Ceba3E9d6724EEAED405CC16106f";
+const CONTRACT_ADDRESS = '0xB841e47509C3Ceba3E9d6724EEAED405CC16106f';
 
 const main = async () => {
   const wallet = getWallet();
@@ -13,8 +13,8 @@ const main = async () => {
   );
   const ans = 42;
   const overrides: PayableOverrides = {
-    value: utils.parseEther("1"),
-    gasLimit: "50000",
+    value: utils.parseEther('1'),
+    gasLimit: '50000',
   };
 
   const result = await guesser.guess(ans, overrides);

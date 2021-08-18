@@ -1,4 +1,4 @@
-import { ethers, Wallet } from "ethers";
+import { ethers, Wallet } from 'ethers';
 const { RPC_HOST, PRIVATE_KEY } = process.env;
 
 const getWallet = (): Wallet => {
