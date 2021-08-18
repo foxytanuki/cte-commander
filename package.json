@@ -12,22 +12,22 @@
     "generate-types": "typechain --target=ethers-v5 'abi/*.json'",
     "postinstall": "yarn generate-types",
     "typecheck": "tsc --noEmit",
-    "start": "docker-compose run cte-commander yarn ts-node"
+    "start": "docker-compose run -u root cte-commander yarn ts-node",
+    "hardhat": "docker-compose run -u root cte-commander npx hardhat run"
   },
   "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-etherscan": "^2.1.4",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
-    "@typechain/ethers-v5": "^6.0.1",
+    "@typechain/ethers-v5": "^7.0.1",
     "@typechain/hardhat": "^2.3.0",
     "@types/bn.js": "^5.1.0",
     "@types/node": "^16.6.1",
-    "ts-node": "^9.1.1",
-    "@nomiclabs/hardhat-ethers": "^2.0.2",
     "ethers": "^5.0.31",
     "hardhat": "^2.6.0",
-    "typechain": "^4.0.2",
-    "typescript": "4.2.2"
+    "ts-node": "^10.2.0",
+    "typechain": "^5.1.2",
+    "typescript": "4.3.5"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
