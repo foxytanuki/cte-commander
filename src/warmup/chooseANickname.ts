@@ -10,9 +10,7 @@ const main = async () => {
   const nickname = 'foxyTanuki';
   const nicknameBytes32 = utils.formatBytes32String(nickname);
 
-  const cte = CaptureTheEther__factory.connect(CONTRACT_ADDRESS, wallet).catch(
-    handleError
-  );
+  const cte = CaptureTheEther__factory.connect(CONTRACT_ADDRESS, wallet);
   const result = await cte.setNickname(nicknameBytes32).catch(handleError);
 
   console.log(result);
