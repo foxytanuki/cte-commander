@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Client(Commander) Application for Capture the Ether(https://capturetheether.com/).",
   "main": "index.js",
-  "author": "Yuta Tsurusaki <biz@yuta-tsurusaki.com> (https://github.com/yuta-tsurusaki)",
+  "author": "foxytanuki <biz@foxytanuki.dev> (https://github.com/foxytanuki)",
   "license": "MIT",
   "private": true,
   "scripts": {
