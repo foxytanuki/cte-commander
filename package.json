@@ -11,10 +11,7 @@
     "clean": "yarn hardhat clean",
     "generate-types": "typechain --target=ethers-v5 'abi/*.json'",
     "postinstall": "yarn generate-types",
-    "typecheck": "tsc --noEmit",
-    "start": "yarn docker:run yarn ts-node",
-    "start:h": "yarn docker:run yarn hardhat run",
-    "docker:run": "docker-compose run -u root cte-commander"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
