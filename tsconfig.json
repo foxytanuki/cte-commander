@@ -10,10 +10,12 @@
     "forceConsistentCasingInFileNames": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "./typechain-types"
   ],
   "exclude": [
     "node_modules",
     "src/oldChallenges"
-  ]
+  ],
+  "files": ["./hardhat.config.ts"]
 }
