@@ -1,6 +1,6 @@
 import { utils, PayableOverrides } from 'ethers';
-import { GuessTheNumberChallenge__factory } from '../../types/ethers-contracts';
-import { handleError, getWallet } from '../utils';
+import { GuessTheNumberChallenge__factory } from '../../../types/ethers-contracts';
+import { handleError, getWallet } from '../../utils';
 
 const CONTRACT_ADDRESS = '0xB841e47509C3Ceba3E9d6724EEAED405CC16106f';
 

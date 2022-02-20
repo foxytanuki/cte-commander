@@ -1,6 +1,6 @@
 import { utils } from 'ethers';
-import { CaptureTheEther__factory } from '../../types/ethers-contracts';
-import { handleError, getWallet } from '../utils';
+import { CaptureTheEther__factory } from '../../../types/ethers-contracts';
+import { handleError, getWallet } from '../../utils';
 
 const CONTRACT_ADDRESS = '0x71c46Ed333C35e4E6c62D32dc7C8F00D125b4fee';
 

@@ -1,7 +1,7 @@
 import { utils, PayableOverrides } from 'ethers';
 import { isBytesLike } from 'ethers/lib/utils';
-import { GuessTheSecretNumberChallenge__factory } from '../../types/ethers-contracts';
-import { handleError, getWallet } from '../utils';
+import { GuessTheSecretNumberChallenge__factory } from '../../../types/ethers-contracts';
+import { handleError, getWallet } from '../../utils';
 
 const CONTRACT_ADDRESS = '0xb47ac018996551Ad434043C2AE01Cc66689d6612';
 

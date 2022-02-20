@@ -1,6 +1,6 @@
 import { utils, PayableOverrides, ContractReceipt } from 'ethers';
-import { PredictTheBlockHashChallenge__factory } from '../../types/ethers-contracts';
-import { handleError, getWallet } from '../utils';
+import { PredictTheBlockHashChallenge__factory } from '../../../types/ethers-contracts';
+import { handleError, getWallet } from '../../utils';
 
 const CONTRACT_ADDRESS = '0x7c995EF8a735ACEe62cA8493B9887f4123BaA201';
 

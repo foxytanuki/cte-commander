@@ -1,7 +1,7 @@
 import { utils, PayableOverrides } from 'ethers';
 import { ethers } from 'hardhat';
-import { PredictTheFutureChallenge__factory } from '../../types/ethers-contracts';
-import { handleError, getWallet } from '../utils';
+import { PredictTheFutureChallenge__factory } from '../../../types/ethers-contracts';
+import { handleError, getWallet } from '../../utils';
 
 const CHALLENGE_CONTRACT_ADDRESS = '0x7d8484FA7FA726547a2660E625D7f549c4Dd2279';
 const ATTACKER_CONTRACT_ADDRESS = '0x847e4BD2A70F4DE94CB567d3dA36Ce46B00Ff9BF';
