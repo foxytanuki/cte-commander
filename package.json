@@ -9,6 +9,7 @@
   "scripts": {
     "compile": "yarn hardhat compile",
     "clean": "yarn hardhat clean",
+    "start": "yarn hardhat run",
     "typecheck": "tsc --noEmit",
     "postinstall": "yarn compile"
   },
