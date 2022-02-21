@@ -124,3 +124,6 @@ artifacts
 
 # hardhat's artifact cache
 cache
+
+# secret
+.secret.ts
