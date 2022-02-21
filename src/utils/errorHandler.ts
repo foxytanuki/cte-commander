@@ -1,5 +1,7 @@
+import { log } from './log';
+
 const handleError = (e: unknown) => {
-  console.error(e);
+  log.error('Error:', e);
   process.exit(1);
 };
 
