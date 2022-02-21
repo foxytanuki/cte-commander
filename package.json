@@ -9,9 +9,8 @@
   "scripts": {
     "compile": "yarn hardhat compile",
     "clean": "yarn hardhat clean",
-    "generate-types": "typechain --target=ethers-v5 'abi/*.json'",
-    "postinstall": "yarn generate-types",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "postinstall": "yarn compile"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
