@@ -11,7 +11,7 @@
   },
   "include": [
     "src/**/*",
-    "./typechain-types"
+    "./typechain"
   ],
   "exclude": [
     "node_modules",
