@@ -3,4 +3,4 @@ const handleError = (e: unknown) => {
   process.exit(1);
 };
 
-export default handleError;
+export { handleError };

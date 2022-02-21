@@ -1,4 +1,3 @@
-import handleError from './errorHandler';
-import getWallet from './getWallet';
-
-export { handleError, getWallet };
+export * from './errorHandler';
+export * from './getWallet';
+export * from './log';

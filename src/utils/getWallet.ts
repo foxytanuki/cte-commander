@@ -12,4 +12,4 @@ const getWallet = (): Wallet => {
   return wallet;
 };
 
-export default getWallet;
+export { getWallet };
